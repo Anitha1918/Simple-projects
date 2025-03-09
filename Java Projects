@@ -202,3 +202,34 @@ class A
     }
 }
 
+7. Print Fibonacci Series
+Write a program to print the Fibonacci series up to a certain number of terms (N), where N is input by the user. Use a for or while loop.
+
+import java.util.Scanner;
+
+class A
+{
+    public static void main(String[] args)
+    {
+        Scanner scan = new Scanner(System.in);
+        int a = scan.nextInt();
+        System.out.println(a);
+        int first = 0;
+        int second = 1;
+        if(first >= 0)
+        {
+           System.out.println(first);
+        }
+        if(second >= 1)
+        {
+            System.out.println(second);
+        }
+        for(int i=3; i<=a;i++)
+        {
+         int fnext = first + second;
+         System.out.println(fnext);
+         first = second;
+         second = fnext;
+        }
+    }
+}
